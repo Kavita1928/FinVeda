@@ -7,11 +7,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Scroll to the top of the page smoothly when the back-to-top button is clicked
-document.querySelector(".back-to-top").addEventListener("click", function (event) {
-  event.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+document
+  .querySelector(".back-to-top")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
-});
