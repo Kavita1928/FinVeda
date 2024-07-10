@@ -119,6 +119,7 @@ p {
 .main-btn {
   display: inline-block;
   font-weight: 500;
+  font-family: "Bree Serif", serif;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -151,7 +152,7 @@ p {
 }
 
 .main-btn:hover {
-  color: #eda8a8;
+  color: #0a0a0a;
   background-position: right center;
 }
 
@@ -952,9 +953,16 @@ p {
     #fe6e9a 50%,
     #fe8464 100%
   );
-  background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  background-size: 200%;
+  background: -o-linear-gradient(left, #d83016 0%, #fe6e9a 50%, #fe8464 100%);
+  background-image: linear-gradient(to right,red 0%, #FF4E50 20%, #F9D423  50%, #FF4E50  100%);
+  background-size: 200% auto;  
+  transition-duration: 0.3s;  
+}
+
+.login-button:hover,.login-button:focus, .login-button:active{
+  box-shadow: 0 0 10px rgba(187, 244, 15, 0.5);  
+  -webkit-transform: scale(1.4);
+  transform: scale(1.05);
 }
 
 .navbar-btn .main-btn:hover {
